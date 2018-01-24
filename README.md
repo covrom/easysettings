@@ -16,4 +16,6 @@ Sample usage:
 go get github.com/covrom/easysettings
 go build .
 ./easysettings.exe -h
+./easysettings.exe -newkey
+HOST=127.0.0.1 ./easysettings.exe -h
 ```
