@@ -1,5 +1,6 @@
 # easysettings
 Simple getting an app settings from json (first), environment (second) and flags (third) into your struct with tags.
+Imports only standard libraries.
 Use very simple format of struct with tags for all variants of values representation:
 ```
 type AppSettings struct {
