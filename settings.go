@@ -91,6 +91,7 @@ func (as *AppSettings) Init() {
 
 		if f, err := os.Create(SettingsFile); err == nil {
 			enc := json.NewEncoder(f)
+			enc.SetIndent("","    ")
 			if err := enc.Encode(App); err != nil {
 				log.Printf("Creating %s: %s", SettingsFile, err)
 			} else {
